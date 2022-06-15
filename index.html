@@ -12,8 +12,20 @@
 </head>
 
 <body>
+  
+
   <section class="container">
+    <div id="menu">
+      <ul>
+        <li><a href="#cod1">link1</a></li>
+        <li><a href="#cod2">link2</a></li>
+        <li><a href="#cod3">link3</a></li>
+        <li><a href="#cod4">link4</a></li>
+        <li><a href="#cod5">link5</a></li>
+      </ul>
+    </div>
     <section class="content-flex">
+
 
       <!-- LOGO -->
       <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/09/intelbras-logo-6-2.png" width=150
@@ -26,31 +38,7 @@
       <!-- COMEÇO DA CATEG. DHCP -->
       <h1 class="category"><i class="fa-solid fa-folder-tree"></i> DHCP</h1>
       <div class="content-link">
-        <a class="title" href="#cod1"># ubus call dhcp ipv4 leases</a>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
-      </div>
-      <div class="content-link">
-        <a class="title" href="#cod2"># ubus call dhcp ipv6 leases</a>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
-      </div>
-
-      <!-- COMEÇO DA CATEG. FILE -->
-      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> FILE</h1>
-      <div class="content-link">
-        <a class="title" href="#cod3"># ubus call file list {path:/etc/wsplcd}</a>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
-      </div>
-      <div class="content-link">
-        <a class="title-error" href="#cod4"># "exec":{"command":"String","params":"Array","env":"Table"}</a>
+        <a class="title" href="#"># ubus call dhcp ipv4 leases</a>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
           feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
           Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
@@ -68,6 +56,13 @@
           }
         </pre>
       </div>
+      <div class="content-link">
+        <a class="title" href="#"># ubus call dhcp ipv6 leases</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
 
       <!-- CÓDIGO 2 -->
       <div id="cod2" class="code">
@@ -81,6 +76,15 @@
         </pre>
       </div>
 
+      <!-- COMEÇO DA CATEG. FILE -->
+      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> FILE</h1>
+      <div class="content-link">
+        <a class="title" href="#"># ubus call file list {path:/etc/wsplcd}</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
       <!-- CÓDIGO 3 -->
       <div id="cod3" class="code">
         <p class="title-code">ubus call file list {path:/etc/wsplcd}</p>
@@ -92,6 +96,20 @@
           }
         </pre>
       </div>
+
+      <div class="content-link">
+        <a class="title-error" href="#"># "exec":{"command":"String","params":"Array","env":"Table"}</a>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
+
+      
+
+      
+
+      
 
       <!-- CÓDIGO 4 -->
       <div id="cod4" class="code-error">

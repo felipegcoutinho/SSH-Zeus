@@ -1,9 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&display=swap');
 
+
 html {
   border-top: 3px solid #00a335;
   width: 100%;
   scroll-behavior: smooth;
+}
+
+#menu {
+  width: 300px;
+  margin-right: 20px;
+  border: 2px solid mediumspringgreen;
+}
+
+#menu ul li {
+  margin: 0;
+  padding: 5px;
+  text-align: left;
+  list-style-type: none;
+  
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border: 1px solid mediumspringgreen;
+  border-radius: 5px;
+  
+}
+
+#menu a:hover {
+  background: rgb(1, 211, 131);
+  color: black;
 }
 
 .logo {
@@ -111,7 +141,7 @@ div:target {
   border-radius: 5px;
   padding: 2px 10px;
   font-size: 12px;
-  margin-top: 30px;
+  margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
