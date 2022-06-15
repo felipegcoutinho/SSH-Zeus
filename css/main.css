@@ -30,7 +30,7 @@ hr {
 }
 
 .main-description {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 section.container {
@@ -52,7 +52,7 @@ section.container {
 }
 
 .category {
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px;
   border-radius: 5px;
   border: 2px solid mediumspringgreen;
