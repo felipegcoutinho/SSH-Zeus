@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <section class="container">
+    <section class="content-flex">
+      <!-- LOGO -->
+      <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/09/intelbras-logo-6-2.png" width=150
+        height=30>
+
+      <!-- DESCRIÇÃO INICIAL -->
+      <p class="main-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+        feugiat, ut lobortis neque aliquet.</p>
+
+      <!-- COMEÇO DA CATEG. DHCP -->
+      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> DHCP</h1>
+      <div class="content-link">
+        <a class="title" href="#cod1"># ubus call dhcp ipv4 leases</a><br>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
+      <div class="content-link">
+        <a class="title" href="#cod2"># ubus call dhcp ipv6 leases</a><br>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
+
+      <!-- COMEÇO DA CATEG. FILE -->
+      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> FILE</h1>
+      <div class="content-link">
+        <a class="title" href="#cod3"># ubus call file list {path:/etc/wsplcd}</a><br>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
+      <div class="content-link">
+        <a class="title-error" href="#cod4">#
+          "exec":{"command":"String","params":"Array","env":"Table"}</a><br>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
+          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
+          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
+          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+      </div>
+
+      <!-- ESPAÇO QUE SEPARA AS DESCRIÇÕES DOS CÓDIGOS -->
+      <br>
+
+      <!-- CÓDIGO 1 -->
+      <div id="cod1" class="code">
+        <p class="title-code">ubus call dhcp ipv4 leases</p>
+        <pre>
+          {
+                  "device": {
+
+                  }
+          }
+        </pre>
+      </div>
+
+      <!-- CÓDIGO 2 -->
+      <div id="cod2" class="code">
+        <p class="title-code">ubus call dhcp ipv6 leases</p>
+        <pre>
+          {
+                  "device": {
+
+                  }
+          }
+        </pre>
+      </div>
+
+      <!-- CÓDIGO 3 -->
+      <div id="cod3" class="code">
+        <p class="title-code">ubus call file list {path:/etc/wsplcd}</p>
+        <pre>
+          {
+                  "device": {
+
+                  }
+          }
+        </pre>
+      </div>
+
+      <!-- CÓDIGO 4 -->
+      <div id="cod4" class="code-error">
+        <p class="title-code">"exec":{"command":"String","params":"Array","env":"Table"}</p>
+        <pre>
+          {
+                  "device": {
+
+                  }
+          }
+        </pre>
+      </div>
+
+    </section>
+  </section>
+</body>
+
+</html>
