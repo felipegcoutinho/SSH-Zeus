@@ -119,12 +119,12 @@ section.content-flex {
 
 div:target {
   border: 2px solid rgb(255, 245, 99);
-  background-color: #262723;
+  background-color: #161715;
 }
 
 div.content-link-error:target {
   border: 2px solid orangered;
-  background-color: #2d2727;
+  background-color: #161715;
 }
 
 .code,
