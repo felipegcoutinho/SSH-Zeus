@@ -49,13 +49,14 @@ a.dropdown:hover {
 
 a.submenu {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   color: white;
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 5px;
   word-wrap: break-word;
   background-color: #212321;
+  border-left: 5px solid white;
 }
 
 a.submenu:hover {
@@ -101,9 +102,7 @@ section.content-flex {
   font-size: 20px;
   padding: 10px;
   border-radius: 5px;
-  border: 0px solid mediumspringgreen;
   color: mediumspringgreen;
-  border-left: 0px solid mediumspringgreen;
   background-color: rgb(0, 39, 24);
 }
 
@@ -118,7 +117,7 @@ section.content-flex {
 }
 
 div:target {
-  border: 2px solid rgb(255, 245, 99);
+  border: 2px solid #fff563;
   background-color: #161715;
 }
 
