@@ -109,12 +109,14 @@ section.content-flex {
 
 .title {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: bold;  
+  word-wrap: break-word;
 }
 
 .title-error {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: bold;  
+  word-wrap: break-word;
 }
 
 div:target {
