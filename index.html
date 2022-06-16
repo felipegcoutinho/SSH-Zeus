@@ -1,155 +1,210 @@
-<!DOCTYPE html>
-<html>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="shortcut icon" href="https://static.apiary.io/assets/3aqvBs0H.ico">
-  <title>COMANDOS SSH - ZEUS OS</title>
-</head>
+html {
+  border-top: 3px solid #00a335;
+  width: 100%;
+  scroll-behavior: smooth;
+}
 
-<body>
-  <section class="container">
-    <div class="menu-container">
-      <div id="menu">
-        <!-- LOGO -->
-        <div class="logo-container">
-          <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/09/intelbras-logo-6-2.png" width=150
-            height=30>
-        </div>
-        <ul>
+body {
+  font-family: 'Ubuntu Mono', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(180deg, #03090d, #04120e);
+  color: white;
+  line-height: 27px;
+}
 
-          <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> DHCP</a>
-          <div class="dropdown-container">
-            <a class="submenu" href="#cod1"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv4 leases</a>
-            <a class="submenu" href="#cod2"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv6 leases</a>
-          </div>
+a {
+  color: white;
+  text-decoration: none;
+}
 
-          <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> FILE</a>
-          <div class="dropdown-container">
-            <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
-              {path:/etc/wsplcd}</a>
-            <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
-              "exec":{"command":"String","params":"Array","env":"Table"}</a>
-          </div>
+a:hover {
+  color: orange;
+}
 
-        </ul>
-      </div>
-    </div>
+h1 {
+  font-size: 30px;
+}
 
-    <section class="content-flex">
+a.dropdown {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  border: 0px solid mediumspringgreen;
+  border-left: 5px solid mediumspringgreen;
+  margin-bottom: 5px;
+  background-color: rgb(0, 39, 24);
+  font-weight: bold;
+}
 
-      <!-- DESCRIÇÃO INICIAL -->
-      <p class="main-description">
-      <h1>ZEUS OS</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-      feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-      Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
-      Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+a.dropdown:hover {
+  color: mediumspringgreen;
+}
 
-      <!-- COMEÇO DA CATEG. DHCP -->
-      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> DHCP</h1>
+a.submenu {
+  display: block;
+  font-size: 15px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  background-color: #212321;
+  border-left: 5px solid white;
+}
 
-      <div id="cod1" class="content-link">
-        <span class="title">ubus call dhcp ipv4 leases</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
-          vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+a.submenu:hover {
+  background-color: mediumspringgreen;
+  color: black !important;
+}
 
-        <div class="code">
-          <!-- <p class="title-code">ubus call dhcp ipv4 leases</p> -->
-          <pre>
-          {
-                  "device": {
+.dropdown-container {
+  display: none;
+}
 
-                  }
-          }
-        </pre>
-        </div>
-      </div>
-      <div id="cod2" class="content-link">
-        <span class="title">ubus call dhcp ipv6 leases</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+div.logo-container {
+  margin: 30px 0 30px 0;
+  padding-left: 70px;
+}
 
-        <div class="code">
-          <!--<p class="title-code">ubus call dhcp ipv6 leases</p>-->
-          <pre>
-          {
-                  "device": {
+p.main-description {
+  font-size: 18px;
+  font-family: 'Inter', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+  ;
+}
 
-                  }
-          }
-        </pre>
-        </div>
-      </div>
+p.description {
+  font-size: 16px;
+  text-align: justify;
+  font-family: 'Inter', monospace, Segoe UI, Arial, Helvetica, sans-serif;
+}
 
-      <!-- COMEÇO DA CATEG. FILE -->
-      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> FILE</h1>
-      <div id="cod3" class="content-link">
-        <span class="title">ubus call file list {path:/etc/wsplcd}</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
-          vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+.menu-container {
+  width: 300px;
+  margin-right: 10px;
+}
 
-        <!-- CÓDIGO 3 -->
-        <div class="code">
-          <!-- <p class="title-code">ubus call file list {path:/etc/wsplcd}</p>-->
-          <pre>
-          {
-                  "device": {
+section.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-                  }
-          }
-        </pre>
-        </div>
-      </div>
-      <div id="cod4" class="content-link-error">
-        <span class="title-error">"exec":{"command":"String","params":"Array","env":"Table"}</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
-          vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
+section.content-flex {
+  max-width: 1200px;
+}
 
-        <!-- CÓDIGO 4 -->
-        <div class="code-error">
-          <!-- <p class="title-code">"exec":{"command":"String","params":"Array","env":"Table"}</p>-->
-          <pre>
-          {
-                  "device": {
+.content-link,
+.content-link-error {
+  padding: 10px;
+  border-radius: 5px;
+}
 
-                  }
-          }
-        </pre>
-        </div>
-      </div>
-    </section>
-  </section>
+.category {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: mediumspringgreen;
+  background-color: rgb(0, 39, 24);
+  box-shadow: rgb(0 249 110 / 10%) 0px 0px 20px 0px;
+}
 
-  <script>
-    var dropdown = document.getElementsByClassName("dropdown");
-    var i;
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
 
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-  </script>
-</body>
+.title-error {
+  font-size: 30px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
 
-</html>
+div:target {
+  border: 2px solid #fff563;
+  background-color: #161715;
+}
+
+div.content-link-error:target {
+  border: 2px solid orangered;
+  background-color: #161715;
+}
+
+.code,
+.code-error {
+  background-color: #232323;
+  border-radius: 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.title-code {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0 7px 0 7px;
+  cursor: pointer;
+}
+
+.title-code:hover {
+  background-color: rgb(19, 19, 19);
+}
+
+.title-code:active {
+  background-color: mediumspringgreen;
+  color: black;
+
+  box-shadow: rgb(0 249 110 / 10%) 0px 0px 20px 0px;
+}
+
+@media (max-width: 900px) {
+
+  section.container {
+    padding: 10px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  section.content-flex {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu-container {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  div.logo-container {
+    margin-top: 20px;
+    padding-left: 120px;
+  }
+
+  p.description {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  a.title {
+    font-size: 20px;
+  }
+
+  a.title-error {
+    font-size: 20px;
+  }
+
+  p.title-code {
+    font-size: 12px;
+  }
+}
