@@ -20,11 +20,15 @@ a {
 }
 
 a:hover {
-  color: orange;
+  color: mediumspringgreen;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 27px;
+}
+
+h3 {
+  margin: 5px 0  10px 0;
 }
 
 a.dropdown {
@@ -67,7 +71,6 @@ a.submenu:hover {
 
 div.logo-container {
   margin: 30px 0 30px 0;
-  padding-left: 70px;
 }
 
 p.main-description {
@@ -146,14 +149,14 @@ div.content-link-error:target {
 
 .title-code {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 14px;
   color: white;
   font-weight: bold;
   text-align: center;
   background-color: #000;
   width: fit-content;
   border-radius: 5px;
-  padding: 0 7px 0 7px;
+  padding: 7px 7px;
   cursor: pointer;
 }
 
@@ -164,7 +167,6 @@ div.content-link-error:target {
 .title-code:active {
   background-color: mediumspringgreen;
   color: black;
-
   box-shadow: rgb(0 249 110 / 10%) 0px 0px 20px 0px;
 }
 

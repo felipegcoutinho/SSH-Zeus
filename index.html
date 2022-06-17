@@ -17,6 +17,9 @@
       <div class="logo-container">
         <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/09/intelbras-logo-6-2.png" width=150
           height=30>
+        <h1>Chamadas de sistema UBUS</h1>
+        <h3><i class="fa-brands fa-github"></i> <a href="#">@arthurcadore</a></h3> 
+        <h3><i class="fa-brands fa-github"></i> <a href="#">@felipegcoutinho</a></h3>
       </div>
       <!-- Primeiro Grupo Menu Lateral -->
       <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> DHCP</a>
@@ -41,7 +44,7 @@
     <section class="content-flex">
 
       <!-- DESCRIÇÃO INICIAL -->
-      <h1>ZEUS OS</h1>
+
       <p class="main-description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
         feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
@@ -53,7 +56,8 @@
 
       <!-- COMEÇO DA DESCRIÇÃO PRIMEIRO ITEM -->
       <div id="cod1" class="content-link">
-        <span class="title">ubus call dhcp ipv4 leases</span>
+        <span class="title" id="a">ubus call dhcp ipv4 leases</span>
+        <span class="title-code" onclick="copyCode(document.getElementById('a').innerHTML)">copiar</span>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
           feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
           Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
@@ -61,10 +65,9 @@
           Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
 
         <div class="code">
-          <p class="title-code" onclick="copyCode(document.getElementById('copy-code').innerHTML)">copiar</p>
-          <pre id="copy-code">
+          <pre>
           {
-                  "device": {
+                  "device": {a
 
                   }
           }
@@ -74,17 +77,18 @@
 
       <!-- COMEÇO DA DESCRIÇÃO SEGUNDO ITEM -->
       <div id="cod2" class="content-link">
-        <span class="title">ubus call dhcp ipv6 leases</span>
+        <span class="title" id="b">ubus call dhcp ipv6 leases</span>
+        <span class="title-code" onclick="copyCode(document.getElementById('b').innerHTML)">copiar</span>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
           feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
           Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
           Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
 
         <div class="code">
-          <p class="title-code" onclick="copyCode(document.getElementById('copy-code').innerHTML)">copiar</p>
-          <pre id="copy-code">
+
+          <pre>
           {
-                  "device": {
+                  "device": {b
 
                   }
           }
@@ -95,7 +99,8 @@
       <!-- COMEÇO DA CATEG. FILE -->
       <h1 class="category"><i class="fa-solid fa-folder-tree"></i> FILE</h1>
       <div id="cod3" class="content-link">
-        <span class="title">ubus call file list {path:/etc/wsplcd}</span>
+        <span class="title" id="c">ubus call file list {path:/etc/wsplcd}</span>
+        <span class="title-code" onclick="copyCode(document.getElementById('c').innerHTML)">copiar</span>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
           feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
           Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
@@ -104,10 +109,10 @@
 
         <!-- CÓDIGO 3 -->
         <div class="code">
-          <p class="title-code" onclick="copyCode(document.getElementById('copy-code').innerHTML)">copiar</p>
-          <pre id="copy-code">
+
+          <pre>
           {
-                  "device": {
+                  "device": {c
 
                   }
           }
@@ -115,7 +120,8 @@
         </div>
       </div>
       <div id="cod4" class="content-link-error">
-        <span class="title-error">"exec":{"command":"String","params":"Array","env":"Table"}</span>
+        <span class="title-error" id="d">"exec":{"command":"String","params":"Array","env":"Table"}</span>
+        <span class="title-code" onclick="copyCode(document.getElementById('d').innerHTML)">copiar</span>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
           feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
           Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
@@ -124,10 +130,9 @@
 
         <!-- CÓDIGO 4 -->
         <div class="code-error">
-          <p class="title-code" onclick="copyCode(document.getElementById('copy-code').innerHTML)">copiar</p>
-          <pre id="copy-code">
+          <pre>
           {
-                  "device": {
+                  "device": {d
 
                   }
           }
