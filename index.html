@@ -4,168 +4,31 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COMANDOS SSH - ZEUS OS</title>
-  <link rel="shortcut icon" href="https://static.apiary.io/assets/3aqvBs0H.ico">
+  <title>SSH - ZEUS OS</title>
+  <link rel="shortcut icon" href="/resources/img/ssh_icon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
-  <section class="container">
-    <div class="menu-container">
-      <!-- LOGO -->
-      <div class="logo-container">
-        <img class="logo" src="https://logodownload.org/wp-content/uploads/2016/09/intelbras-logo-6-2.png" width=150
-          height=30>
-        <h1>Chamadas de sistema UBUS</h1>
-        <h3><i class="fa-brands fa-github"></i> <a href="#">@arthurcadore</a></h3>
-        <h3><i class="fa-brands fa-github"></i> <a href="#">@felipegcoutinho</a></h3>
-      </div>
-      <!-- Primeiro Grupo Menu Lateral -->
-      <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> DHCP</a>
-      <div class="dropdown-container">
-        <!-- SubMenu -->
-        <a class="submenu" href="#cod1"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv4 leases</a>
-        <!-- SubMenu -->
-        <a class="submenu" href="#cod2"><i class="fa-solid fa-hashtag"></i> ubus call dhcp ipv6 leases</a>
-      </div>
 
-      <!-- Segundo Grupo Menu Lateral -->
-      <a class="dropdown"><i class="fa-solid fa-folder-tree"></i> FILE</a>
-      <div class="dropdown-container">
-        <!-- SubMenu -->
-        <a class="submenu" href="#cod3"><i class="fa-solid fa-hashtag"></i> ubus call file list
-          {path:/etc/wsplcd}</a>
-        <!-- SubMenu -->
-        <a class="submenu" href="#cod4"><i class="fa-solid fa-hashtag"></i>
-          "exec":{"command":"String","params":"Array","env":"Table"}</a>
-      </div>
+  <div class="logo-container">
+    <img class="logo" src="https://arthurcadore.github.io/resources/img/intelbras-logo.png" width="300" height="60">
+  </div>
+
+  <h1 class="title">DOCUMENTAÇÃO LINHA DE COMANDO - ZEUS OS</h1>
+
+  <section class="container flex">
+    <a href="/ubus.html" class="item"><i class="fa-solid fa-microchip"></i> CHAMADAS DE SISTEMA - UBUS</a>
+    <a href="/sistema.html" class="item"><i class="fa-solid fa-screwdriver-wrench"></i> UTILITÁRIOS DO SISTEMA</a>
+    <a href="/logs.html" class="item"><i class="fa-solid fa-laptop-code"></i> DOCUMENTAÇÃO DE LOGS</a>
+    <a href="#" class="item"><i class="fa-solid fa-book-open"></i> SLIDES DO WORKSHOP</a>
+    <div class="links">
+      <h5><i class="fa-brands fa-github"></i> <a href="#">@arthurcadore</a> | <a href="#">@felipegcoutinho</a>
+      </h5>
     </div>
-    <section class="content-flex">
-
-      <!-- DESCRIÇÃO INICIAL -->
-
-      <p class="main-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-        feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-        Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
-        Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
-
-      <!-- COMEÇO DA CATEG. DHCP -->
-      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> DHCP</h1>
-
-      <!-- COMEÇO DA DESCRIÇÃO PRIMEIRO ITEM -->
-      <div id="cod1" class="content-link">
-        <span class="title" id="a">ubus call dhcp ipv4 leases</span>
-        <span class="title-code" onclick="copyCode(document.getElementById('a').innerHTML)">copiar</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
-          vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
-
-        <div class="code">
-          <pre>
-          {
-                  "device": {a
-
-                  }
-          }
-        </pre>
-        </div>
-      </div>
-
-      <!-- COMEÇO DA DESCRIÇÃO SEGUNDO ITEM -->
-      <div id="cod2" class="content-link">
-        <span class="title" id="b">ubus call dhcp ipv6 leases</span>
-        <span class="title-code" onclick="copyCode(document.getElementById('b').innerHTML)">copiar</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
-
-        <div class="code">
-
-          <pre>
-          {
-                  "device": {b
-
-                  }
-          }
-        </pre>
-        </div>
-      </div>
-
-      <!-- COMEÇO DA CATEG. FILE -->
-      <h1 class="category"><i class="fa-solid fa-folder-tree"></i> FILE</h1>
-      <div id="cod3" class="content-link">
-        <span class="title" id="c">ubus call file list {path:/etc/wsplcd}</span>
-        <span class="title-code" onclick="copyCode(document.getElementById('c').innerHTML)">copiar</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
-          vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
-
-        <!-- CÓDIGO 3 -->
-        <div class="code">
-
-          <pre>
-          {
-                  "device": {c
-
-                  }
-          }
-        </pre>
-        </div>
-      </div>
-      <div id="cod4" class="content-link-error">
-        <span class="title-error" id="d">"exec":{"command":"String","params":"Array","env":"Table"}</span>
-        <span class="title-code" onclick="copyCode(document.getElementById('d').innerHTML)">copiar</span>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat est nec dui
-          feugiat, ut lobortis neque aliquet. Sed arcu ligula, fringilla suscipit diam tempus, convallis varius diam.
-          Donec id nisi malesuada, vulputate turpis at, molestie elit. Morbi maximus libero id velit ultrices
-          vulputate.
-          Cras ut massa egestas, aliquam ex ac, consequat odio.</p>
-
-        <!-- CÓDIGO 4 -->
-        <div class="code-error">
-          <pre>
-          {
-                  "device": {d
-
-                  }
-          }
-        </pre>
-        </div>
-      </div>
-    </section>
   </section>
-  <script>
-    var dropdown = document.getElementsByClassName("dropdown");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-    function copyCode(str) {
-      function listener(e) {
-        e.clipboardData.setData("text/plain", str);
-        e.preventDefault();
-      }
-      document.addEventListener("copy", listener);
-      document.execCommand("copy");
-      document.removeEventListener("copy", listener);
-    };
-  </script>
+  </div>
 </body>
 
 </html>
