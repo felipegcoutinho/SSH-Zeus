@@ -11,6 +11,10 @@ body {
   color: white;
 }
 
+::selection {
+  background: #005231;
+}
+
 a {
   color: white;
   text-decoration: none;
