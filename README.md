@@ -2,4 +2,4 @@
 
 ## Página criada para ajudar na apresentação sobre o sistema zeus ministrada pelo analista Arthur Cadore.
 
-Ver: https://felipegcoutinho.github.io/ubus/
+Ver: https://felipegcoutinho.github.io/SSH-Zeus/
